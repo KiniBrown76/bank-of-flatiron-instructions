@@ -3,13 +3,13 @@ import SearchBar from './Components/SearchBar';
 import TransactionForm from './Components/TransactionForm';
 import TransactionTable from './Components/TransactionTable';
 import TransactionRow from './Components/TransactionRow';
-
+export const url = "https://transaction-db.vercel.app/transactions" 
 function App() {
   const [transactions, setTransactions] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3000/transactions')
+    fetch(url)                  
       .then(response => response.json())
       .then(data => setTransactions(data));
   }, []);

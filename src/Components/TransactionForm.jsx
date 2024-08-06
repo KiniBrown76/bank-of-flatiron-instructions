@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { url } from '../App';
 
 function TransactionForm({ addTransaction }) {
   const [formData, setFormData] = useState({
@@ -17,7 +18,7 @@ function TransactionForm({ addTransaction }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://localhost:3000/transactions', {
+    fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

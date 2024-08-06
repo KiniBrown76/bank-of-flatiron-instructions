@@ -2,7 +2,7 @@ import React from 'react';
 
 function TransactionRow({ transaction, onDelete }) {
   const handleDelete = () => {
-    fetch(`/transactions/${transaction.id}`, {
+    fetch(`https://transaction-db.vercel.app/transactions/${transaction.id}`, {
       method: 'DELETE'
     }).then(() => onDelete(transaction.id));
   };
