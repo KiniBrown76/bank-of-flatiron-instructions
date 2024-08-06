@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-// import SearchBar from './components/SearchBar';
-// import TransactionForm from './components/TransactionForm';
-// import TransactionTable from './components/TransactionTable';
 import SearchBar from './Components/SearchBar';
 import TransactionForm from './Components/TransactionForm';
 import TransactionTable from './Components/TransactionTable';
+import TransactionRow from './Components/TransactionRow';
 
 function App() {
   const [transactions, setTransactions] = useState([]);
@@ -32,8 +30,7 @@ function App() {
     </aside>
     <main className="content">
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      {/* <Tran transactions={filteredTransactions} /> */}
-    <TransactionTable transactions={filteredTransactions}/>
+      <TransactionTable transactions={filteredTransactions} />
     </main>
   </div>
   );

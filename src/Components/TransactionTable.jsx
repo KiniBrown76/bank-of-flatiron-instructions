@@ -26,7 +26,7 @@ function TransactionTable({ transactions }) {
   };
 
   const handleDelete = (id) => {
-    setTransactions(transactions.filter(transaction => transaction.id !== id));
+    SetTransactions(transactions.filter(transaction => transaction.id !== id));
   };
 
   return (
