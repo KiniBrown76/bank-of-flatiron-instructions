@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import SearchBar from './Components/SearchBar';
 import TransactionForm from './Components/TransactionForm';
 import TransactionTable from './Components/TransactionTable';
+import TransactionRow from './Components/TransactionRow';
 
 function App() {
   const [transactions, setTransactions] = useState([]);
