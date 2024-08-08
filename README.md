@@ -41,9 +41,8 @@ In order for you to use the content on this repository ensure you have the follo
     npm run dev
     Then copy the local on the browser.
     
-2. *Access the application* at [http://localhost:5173/](http://localhost:5173/) (or your specified port).
+2. *Access the application* at [https://bank-of-flatiron-instructions-mpb5.vercel.app/](https://bank-of-flatiron-instructions-mpb5.vercel.app/) (or your specified port).
 Feel free to adjust these instructions based on the specific setup or dependencies your project may have.
-
 
 ### Alternative One
 
